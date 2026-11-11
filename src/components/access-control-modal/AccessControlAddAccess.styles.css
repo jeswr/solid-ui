@@ -29,7 +29,7 @@
         padding: 10px 15px;
         gap: 12px;
         align-items: flex-start;
-        border-radius: 5px;
+        border-radius: var(--solid-ui-radius-control);
         border: 1px solid var(--solid-ui-color-slate-200, #E2E8F0);
         background: var(--solid-ui-color-white, #FFF);
 
@@ -61,7 +61,7 @@
       align-items: center;
       gap: 6px;
       max-width: 100%;
-      border-radius: 5px;
+      border-radius: var(--solid-ui-radius-control);
       border: 1px solid var(--solid-ui-color-gray-300, #D1D5DC);
       background: var(--solid-ui-color-gray-50, #F9FAFB);
       color: var(--solid-ui-color-gray-700, #374151);

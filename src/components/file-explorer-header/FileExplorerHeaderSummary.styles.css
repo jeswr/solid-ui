@@ -68,7 +68,7 @@
     align-items: center;
     gap: 3px;
     color: var(--blue-400, #51A2FF);
-    border-radius: 5px;
+    border-radius: var(--solid-ui-radius-control);
     background: var(--blue-50, #EFF6FF);
   }
 
@@ -84,7 +84,7 @@
     align-items: center;
     gap: 3px;
     color: var(--yellow-600, #D08700);
-    border-radius: 5px;
+    border-radius: var(--solid-ui-radius-control);
     background: var(--yellow-100, #FEF9C2);
   }
 

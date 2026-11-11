@@ -5,7 +5,7 @@ wa-dropdown::part(menu) {
 }
 
 wa-dropdown-item {
-    border-radius: 5px;
+    border-radius: var(--solid-ui-radius-control);
     padding: 0px;
 
     &:hover {

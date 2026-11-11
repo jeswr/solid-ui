@@ -5,7 +5,7 @@
     margin: 0 0 16px;
     padding: 12px 14px;
     border: 1px solid var(--solid-ui-color-red-300, #FCA5A5);
-    border-radius: 5px;
+    border-radius: var(--solid-ui-radius-control);
     background: var(--solid-ui-color-red-50, #FEF2F2);
     color: var(--solid-ui-color-red-800, #991B1B);
     font-size: var(--solid-ui-font-size-sm, .875rem);
@@ -160,7 +160,7 @@
     min-width: 0;
     max-width: 100%;
     border: 1px solid var(--solid-ui-color-slate-200, #E2E8F0);
-    border-radius: 5px;
+    border-radius: var(--solid-ui-radius-control);
     background: var(--solid-ui-color-white, #FFF);
     padding: 10px 15px;
   }

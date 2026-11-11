@@ -30,7 +30,7 @@
 
         input {
             border: 1px solid var(--solid-ui-input-border-color);
-            border-radius: 5px;
+            border-radius: var(--solid-ui-radius-control);
             padding: 10px;
             width: 100%;
             background: white;

@@ -2,14 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap');
 
 :root {
-    font-family: "Atkinson Hyperlegible Next", "Inter", "Noto Sans", sans-serif;
-    --font-family-ui: "Atkinson Hyperlegible Next", "Inter", "Noto Sans", sans-serif;
-    --wa-font-family-body: "Atkinson Hyperlegible Next", "Inter", "Noto Sans", sans-serif;
+    /*
+     * Brand tokens. This is the small set a deployment overrides to theme SolidOS
+     * (in a stylesheet loaded after this one). Everything else derives from them.
+     */
+    --solid-ui-font-family: "Atkinson Hyperlegible Next", "Inter", "Noto Sans", sans-serif;
     --solid-ui-color-primary: #7c4dff;
+    --solid-ui-color-on-primary: #ffffff;
+    --solid-ui-color-tertiary: #083575; /* hover and pressed state of primary actions */
+    --solid-ui-radius-control: 5px; /* buttons, inputs, selects, chips */
+    --solid-ui-radius-surface: 8px; /* cards, dialogs, menus */
+    --solid-ui-header-background: var(--solid-ui-color-slate-800);
+    --solid-ui-header-color: var(--solid-ui-color-white);
+    --solid-ui-header-border: transparent;
+    --solid-ui-header-control-background: var(--solid-ui-color-body-grey); /* account button */
+    --solid-ui-header-control-color: var(--solid-ui-color-white);
+    --solid-ui-focus-ring: var(--solid-ui-color-primary);
+
+    /* Semantic tokens used by legacy (inline-styled) widgets */
+    --solid-ui-color-text: var(--solid-ui-color-gray-800);
+    --solid-ui-color-text-muted: var(--solid-ui-color-gray-600);
+    --solid-ui-color-border: var(--solid-ui-color-slate-200);
+    --solid-ui-color-surface: var(--solid-ui-color-white);
+    --solid-ui-color-surface-subtle: var(--solid-ui-color-slate-50);
+    --solid-ui-input-background: var(--solid-ui-color-white);
+    --solid-ui-input-border: var(--solid-ui-color-gray-400);
+
+    font-family: var(--solid-ui-font-family);
+    --font-family-ui: var(--solid-ui-font-family);
+    --wa-font-family-body: var(--solid-ui-font-family);
+    --default-font-family: var(--solid-ui-font-family); /* Tailwind preflight inside web components */
     --solid-ui-color-primary-hover: var(--solid-ui-color-lavender-300);
     --solid-ui-color-primary-selected: var(--solid-ui-color-lavender-400);
     --solid-ui-color-blue-900: #083575;
-    --solid-ui-color-tertiary: #083575;
     --solid-ui-color-white: #ffffff;
     --solid-ui-color-error: #b00020;
     --solid-ui-color-pink-50: #fff7f8;
@@ -56,4 +81,14 @@
     --solid-ui-font-size-2xl: 1.5rem;  /* 24px */
 
     --solid-ui-clickable-area: 42px;
+}
+
+/* Card surface for legacy panes (preferences, trusted applications, ...) */
+.solidos-card {
+    background: var(--solid-ui-color-surface);
+    color: var(--solid-ui-color-text);
+    border: 1px solid var(--solid-ui-color-border);
+    border-radius: var(--solid-ui-radius-surface);
+    padding: 1.25rem;
+    margin-top: 1rem;
 }

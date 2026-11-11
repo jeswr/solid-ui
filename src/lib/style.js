@@ -7,45 +7,45 @@ import styleConstants from './styleConstants'
 
 export const style = { // styleModule
 
-  checkboxStyle: 'color: black; font-size: 100%; padding-left: 0.5 em; padding-right: 0.5 em;',
-  checkboxInputStyle: 'font-size: 150%; height: 1.2em; width: 1.2em; background-color: #eef; border-radius:0.2em; margin: 0.1em;',
+  checkboxStyle: 'color: var(--solid-ui-color-text, #1e2939); font-size: 100%; padding-left: 0.5em; padding-right: 0.5em;',
+  checkboxInputStyle: 'font-size: 150%; height: 1.2em; width: 1.2em; accent-color: var(--solid-ui-color-primary, #7c4dff); margin: 0.1em;',
 
-  fieldLabelStyle: 'color: #3B5998; text-decoration: none;',
+  fieldLabelStyle: 'color: var(--solid-ui-color-text, #1e2939); font-weight: 600; text-decoration: none;',
   formSelectStyle:
-    'background-color: #eef; padding: 0.5em;  border: .05em solid #88c; border-radius:0.2em; font-size: 100%; margin:0.4em;',
+    'background-color: var(--solid-ui-input-background, #fff); color: var(--solid-ui-color-text, #1e2939); padding: 0.5em; border: 1px solid var(--solid-ui-input-border, #99a1af); border-radius: var(--solid-ui-radius-control, 5px); font-size: 100%; margin: 0.4em;',
   textInputStyle:
-    'background-color: #eef; padding: 0.5em;  border: .05em solid #88c; border-radius:0.2em; font-size: 100%; margin:0.4em;',
+    'background-color: var(--solid-ui-input-background, #fff); color: var(--solid-ui-color-text, #1e2939); padding: 0.5em; border: 1px solid var(--solid-ui-input-border, #99a1af); border-radius: var(--solid-ui-radius-control, 5px); font-size: 100%; margin: 0.4em;',
   textInputStyleUneditable: // Color difference only
-    'background-color: white; padding: 0.5em;  border: .05em solid white; border-radius:0.2em; font-size: 100%; margin:0.4em;',
+    'background-color: transparent; color: var(--solid-ui-color-text, #1e2939); padding: 0.5em; border: 1px solid transparent; border-radius: var(--solid-ui-radius-control, 5px); font-size: 100%; margin: 0.4em;',
   buttonStyle:
-      'background-color: #fff; padding: 0.7em;  border: .01em solid white; border-radius:0.2em; font-size: 100%; margin: 0.3em;', // 'background-color: #eef;
+      'background-color: var(--solid-ui-color-surface, #fff); color: var(--solid-ui-color-text, #1e2939); padding: 0.5em 0.9em; border: 1px solid var(--solid-ui-color-border, #e2e8f0); border-radius: var(--solid-ui-radius-control, 5px); font-size: 100%; font-weight: 600; margin: 0.3em; cursor: pointer;', // 'background-color: #eef;
   commentStyle: 'padding: 0.7em;  border: none; font-size: 100%; white-space: pre-wrap;',
   iconStyle: 'width: 3em; height: 3em; margin: 0.1em; border-radius: 1em;',
   smallButtonStyle: 'margin: 0.2em; width: 1em; height:1em;',
   classIconStyle: 'width: 3em; height: 3em; margin: 0.1em; border-radius: 0.2em; border: 0.1em solid green; padding: 0.2em; background-color: #efe;', // combine with buttonStyle
-  confirmPopupStyle: 'padding: 0.7em; border-radius: 0.2em; border: 0.1em solid orange; background-color: white; box-shadow: 0.5em 0.9em #888;',
+  confirmPopupStyle: 'padding: 1em; border-radius: var(--solid-ui-radius-surface, 8px); border: 1px solid var(--solid-ui-color-border, #e2e8f0); background-color: var(--solid-ui-color-surface, #fff); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);',
   messageBodyStyle:
-    'white-space: pre-wrap; width: 99%; font-size:100%; border: 0.07em solid #eee; border-radius:0.2em; padding: .3em 0.5em; margin: 0.1em;',
+    'white-space: pre-wrap; width: 99%; font-size:100%; border: 1px solid var(--solid-ui-color-border, #e2e8f0); border-radius: var(--solid-ui-radius-control, 5px); padding: .3em 0.5em; margin: 0.1em;',
   pendingeditModifier: 'color: #bbb;',
 
   // Contacts
   personaBarStyle: 'width: 100%; height: 4em; background-color: #eee; vertical-align: middle;',
-  searchInputStyle: 'border: 0.1em solid #444; border-radius: 0.2em; width: 100%; font-size: 100%; padding: 0.1em 0.6em; margin 0.2em;',
+  searchInputStyle: 'border: 1px solid var(--solid-ui-input-border, #99a1af); border-radius: var(--solid-ui-radius-control, 5px); width: 100%; font-size: 100%; padding: 0.4em 0.6em; margin: 0.2em;',
   autocompleteRowStyle: 'border: 0.2em solid straw;',
 
   // Login buttons
   signInAndUpButtonStyle: 'padding: 1em; border-radius:0.2em; font-size: 100%;', // was 0.5em radius
   headerBannerLoginInput: 'margin: 0.75em 0 0.75em 0.5em !important; padding: 0.5em !important;',
-  signUpBackground: 'background-color: #eef;',
-  signInBackground: 'background-color: #efe;',
+  signUpBackground: 'background-color: var(--solid-ui-color-surface, #fff);',
+  signInBackground: 'background-color: var(--solid-ui-color-surface, #fff);',
 
   // Forms
-  heading1Style: 'font-size: 180%; font-weight: bold; color: #888888; padding: 0.5em; margin: 0.7em 0.0m;', // originally was brown; now grey
-  heading2Style: 'font-size: 130%; font-weight: bold; color: #888888; padding: 0.4em; margin: 0.7em 0.0em;', // originally was brown; now grey
-  heading3Style: 'font-size: 120%; font-weight: bold; color: #888888; padding: 0.3em; margin: 0.7em 0.0em;', // For example, in large forms or before a small form
-  heading4Style: 'font-size: 110%; font-weight: bold; color: #888888; padding: 0.2em; margin: 0.7em 0.0em;', // Lowest level used by default in small things
+  heading1Style: 'font-size: 180%; font-weight: bold; color: var(--solid-ui-color-text, #1e2939); padding: 0.5em; margin: 0.7em 0.0m;', // originally was brown; now grey
+  heading2Style: 'font-size: 130%; font-weight: bold; color: var(--solid-ui-color-text, #1e2939); padding: 0.4em; margin: 0.7em 0.0em;', // originally was brown; now grey
+  heading3Style: 'font-size: 120%; font-weight: bold; color: var(--solid-ui-color-text, #1e2939); padding: 0.3em; margin: 0.7em 0.0em;', // For example, in large forms or before a small form
+  heading4Style: 'font-size: 110%; font-weight: bold; color: var(--solid-ui-color-text, #1e2939); padding: 0.2em; margin: 0.7em 0.0em;', // Lowest level used by default in small things
 
-  formHeadingStyle: 'font-size: 110%; font-weight: bold; color: #888888; padding: 0.2em;  margin: 0.7em 0.0em;', // originally was brown; now grey
+  formHeadingStyle: 'font-size: 110%; font-weight: bold; color: var(--solid-ui-color-text, #1e2939); padding: 0.2em;  margin: 0.7em 0.0em;', // originally was brown; now grey
   formTextInput: 'font-size: 100%; margin: 0.1em; padding: 0.1em;', // originally used this
   formGroupStyle: [`padding-left: 0em; border: 0.0em solid ${styleConstants.formBorderColor}; border-radius: 0.2em;`, // weight 0
     `padding-left: 2em; border: 0.05em solid ${styleConstants.formBorderColor}; border-radius: 0.2em;`,
@@ -55,8 +55,8 @@ export const style = { // styleModule
 
   formFieldLabelStyle: `color: ${styleConstants.lowProfileLinkColor}; text-decoration: none;`,
   formFieldNameBoxStyle: `padding: 0.3em; vertical-align: middle; width:${styleConstants.formFieldNameBoxWidth};`,
-  multilineTextInputStyle: 'font-size:100%; white-space: pre-wrap; background-color: #eef;' +
-  ' border: 0.07em solid gray; padding: 1em 0.5em; margin: 1em 1em;',
+  multilineTextInputStyle: 'font-size:100%; white-space: pre-wrap; background-color: var(--solid-ui-input-background, #fff);' +
+  ' border: 1px solid var(--solid-ui-input-border, #99a1af); border-radius: var(--solid-ui-radius-control, 5px); padding: 1em 0.5em; margin: 1em 1em;',
 
   // Buttons
   renderAsDivStyle: 'display: flex; align-items: center; justify-content: space-between; height: 2.5em; padding: 1em;',
@@ -73,7 +73,7 @@ export const style = { // styleModule
   accessGroupListItem: 'display: grid; grid-template-columns: 100px auto 30%;',
   defaultsController: 'display: flex;',
   defaultsControllerNotice: 'color: #888; flexGrow: 1; fontSize: 80%;',
-  bigButton: 'background-color: white; color: black; text-wrap: pretty; border: 0.1em solid #888; border-radius: 0.3em; max-width: 50%; padding-bottom: 1em; padding-top: 1em;',
+  bigButton: 'background-color: var(--solid-ui-color-surface, #fff); color: var(--solid-ui-color-text, #1e2939); text-wrap: pretty; border: 1px solid var(--solid-ui-color-border, #e2e8f0); border-radius: var(--solid-ui-radius-surface, 8px); max-width: 50%; padding-bottom: 1em; padding-top: 1em;',
   group: 'color: #888;',
   group1: 'color: green;',
   group2: 'color: #cc0;',
@@ -82,7 +82,7 @@ export const style = { // styleModule
   group9: 'color: blue;',
   group13: 'color: purple;',
 
-  trustedAppAddApplicationsTable: 'background-color: #eee;',
+  trustedAppAddApplicationsTable: 'background-color: var(--solid-ui-color-surface-subtle, #f8fafc);',
   trustedAppCancelButton: 'float: right;',
   trustedAppControllerI: 'border-color: orange; border-radius: 1em; border-width: 0.1em;',
   temporaryStatusInit: 'background: green;',
@@ -114,14 +114,14 @@ export const style = { // styleModule
   footer: 'border-top: solid 1px $divider-color; font-size: 0.9em; padding: 0.5em 1.5em;',
 
   // buttons
-  primaryButton: 'background-color: #7c4dff; color: #ffffff; font-family: Raleway, Roboto, sans-serif; border-radius: 0.25em; border-color: #7c4dff; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
-  primaryButtonHover: 'background-color: #9f7dff; color: #ffffff; font-family: Raleway, Roboto, sans-serif;border-radius: 0.25em; border-color: #7c4dff; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
-  primaryButtonNoBorder: 'background-color: #ffffff; color: #7c4dff; font-family: Raleway, Roboto, sans-serif;border-radius: 0.25em; border-color: #7c4dff; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
-  primaryButtonNoBorderHover: 'background-color: #7c4dff; color: #ffffff; font-family: Raleway, Roboto, sans-serif; border-radius: 0.25em; border-color: #7c4dff; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
-  secondaryButton: 'background-color: #01c9ea; color: #ffffff; font-family: Raleway, Roboto, sans-serif;border-radius: 0.25em; border-color: #01c9ea; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
-  secondaryButtonHover: 'background-color: #37cde6; color: #ffffff; font-family: Raleway, Roboto, sans-serif;border-radius: 0.25em; border-color: #7c4dff; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
-  secondaryButtonNoBorder: 'background-color: #ffffff; color: #01c9ea; font-family: Raleway, Roboto, sans-serif; border-radius: 0.25em; border-color: #01c9ea; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
-  secondaryButtonNoBorderHover: 'background-color: #01c9ea; color: #ffffff; font-family: Raleway, Roboto, sans-serif; border-radius: 0.25em; border-color: #01c9ea; border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
+  primaryButton: 'background-color: var(--solid-ui-color-primary, #7c4dff); color: var(--solid-ui-color-on-primary, #fff); font-family: inherit; border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-primary, #7c4dff); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
+  primaryButtonHover: 'background-color: var(--solid-ui-color-tertiary, #083575); color: var(--solid-ui-color-on-primary, #fff); font-family: inherit;border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-primary, #7c4dff); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
+  primaryButtonNoBorder: 'background-color: var(--solid-ui-color-on-primary, #fff); color: var(--solid-ui-color-primary, #7c4dff); font-family: inherit;border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-primary, #7c4dff); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
+  primaryButtonNoBorderHover: 'background-color: var(--solid-ui-color-primary, #7c4dff); color: var(--solid-ui-color-on-primary, #fff); font-family: inherit; border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-primary, #7c4dff); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
+  secondaryButton: 'background-color: var(--solid-ui-color-tertiary, #083575); color: var(--solid-ui-color-on-primary, #fff); font-family: inherit;border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-tertiary, #083575); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
+  secondaryButtonHover: 'background-color: var(--solid-ui-color-tertiary, #083575); color: var(--solid-ui-color-on-primary, #fff); font-family: inherit;border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-primary, #7c4dff); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
+  secondaryButtonNoBorder: 'background-color: var(--solid-ui-color-on-primary, #fff); color: var(--solid-ui-color-tertiary, #083575); font-family: inherit; border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-tertiary, #083575); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none;',
+  secondaryButtonNoBorderHover: 'background-color: var(--solid-ui-color-tertiary, #083575); color: var(--solid-ui-color-on-primary, #fff); font-family: inherit; border-radius: var(--solid-ui-radius-control, 5px); border-color: var(--solid-ui-color-tertiary, #083575); border: 1px solid; cursor: pointer; font-size: .8em; text-decoration: none; padding: 0.5em 4em; transition: 0.25s all ease-in-out; outline: none; transition: 0.25s all ease-in-out;',
 
   // media
   controlStyle: `border-radius: 0.5em; margin: 0.8em; width:${styleConstants.mediaModuleCanvasWidth}; height:${styleConstants.mediaModuleCanvasHeight};`,
@@ -133,7 +133,7 @@ export const style = { // styleModule
 
   // errors
   errorCancelButton: 'width: 2em; height: 2em; align: right;',
-  errorMessageBlockStyle: 'margin: 0.1em; padding: 0.5em; border: 0.05em solid gray; color:black;',
+  errorMessageBlockStyle: 'margin: 0.1em; padding: 0.5em; border: 1px solid var(--solid-ui-color-error, #b00020); border-radius: var(--solid-ui-radius-control, 5px); color: var(--solid-ui-color-text, #1e2939);',
 
   // pad
   notepadStyle: 'padding: 1em; overflow: auto; resize: horizontal; min-width: 40em;',
