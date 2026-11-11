@@ -17,7 +17,7 @@
         select {
             appearance: none;
             border: 1px solid var(--solid-ui-color-gray-400);
-            border-radius: 5px;
+            border-radius: var(--solid-ui-radius-control);
             padding: 10px;
             padding-right: 40px;
             width: 100%;

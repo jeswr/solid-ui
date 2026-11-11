@@ -8,7 +8,7 @@
         align-items: center;
         gap: 5px;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: var(--solid-ui-radius-control);
         color: var(--solid-ui-color-gray-600);
         font-weight: 500;
         font-size: var(--solid-ui-font-size-md);

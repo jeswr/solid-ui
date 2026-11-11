@@ -22,10 +22,10 @@
         align-items: center;
         justify-content: center;
         gap: 5px;
-        background-color: var(--solid-ui-color-body-grey);
+        background-color: var(--solid-ui-header-control-background, var(--solid-ui-color-body-grey));
         padding: var(--padding);
         border-radius: calc((var(--image-size) + 2 * var(--padding) + 2 * var(--border-width)) / 2);
-        color: var(--solid-ui-color-white);
+        color: var(--solid-ui-header-control-color, var(--solid-ui-color-white));
 
         solid-ui-avatar {
             width: var(--image-size);

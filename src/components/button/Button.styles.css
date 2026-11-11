@@ -11,7 +11,7 @@
     button {
         position: relative;
         padding: 7px 12px;
-        border-radius: 5px;
+        border-radius: var(--solid-ui-radius-control);
         font-size: var(--solid-ui-font-size-md);
         font-weight: 600;
         color: var(--text-color);
